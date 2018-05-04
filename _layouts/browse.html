@@ -30,7 +30,7 @@ layout: page
       <img class="card-img-top thumb lazy" data-original="{% include image/thumb.html %}" alt="item thumbnail">
      </a></p> {% endunless %}
      <p>
-    {% assign subjects = item.subjects | split:';' %}
+    {% assign subjects = item.subject | split:';' %}
         {% for subject in subjects %}{% if subject !=" " %}
         <a class="btn btn-sm btn-secondary m-1" data-filter="{{ subject | trim }}" href="#{{ subject | trim }}">{{ subject }}</a> 
         {% endif %}{% endfor %} 
@@ -39,7 +39,6 @@ layout: page
             <p >
             <a href="{% include item-link.html %}" target="_blank" class="btn btn-info" title="link to {{ item.title }}">Go to Item</a>
        </p>
-       <p>{{site.repo-link }}</p>
          </div>
     </div>
 {% endfor %}

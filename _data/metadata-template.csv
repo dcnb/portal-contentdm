@@ -1,3 +1,3 @@
-title,creator,date,location,lat-long,subjects,description,object-id,format,type
+title,creator,date,location,lat-long,subject,description,object-id,format,type
 item one,douglas,2014-01-03,idaho,"46.78, -116.76",things;cats;tests,"first item test one",test001,application/pdf,Text
 item two,another guy,2010-07-15,idaho,"42.39, -113.58",images;dogs;tests,"second item test two",test002,application/pdf,Text

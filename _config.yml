@@ -4,30 +4,42 @@
 # JEKYLL_ENV=production jekyll build
 
 # Site/Collection settings
-title: Latah County Community Heritage Collection
-tagline: Materials from the NEH Funded Common Heritage Community Digitization Project in Latah County
-subjects: Idaho; Northwest; Forests; Wilderness; Fire; Latah; Moscow;Potlatch #separate semi-colon(';')
-description: "The Latah County Common Heritage Collection was driven by funding from a National Endowment for the Humanities (NEH) Common Heritage Grant awarded to the University of Idaho Library in 2016. The materials in this collection were collected via community digitization days held in Moscow and Potlatch in 2016 and 2017." 
-mediatypes: documents; image #options[documents,images,video,sound,data] separate semi-colon(';')
-locations: University of Idaho (Library) #separate by semi-colon(';')
-latitude: 46.738036 #to determine center of map
-longitude: -116.67842 #to determine center of map
+title: The Big Burn Collection
+tagline: An exhibition of materials related to the 'Big Burn' fires of 1910
+subjects:  #separate semi-colon(';')
+description: "The Big Burn Collection is an online exhibit of materials related to the 'Big Burn' fires of 1910 that devastated much of Northern Idaho and Northwest Montana. The collection includes photographs, documents, first-person accounts, and oral histories pertaining to the fires and the local and national responses to them." 
+mediatypes: images,documents #options[documents,images,video,sound,data] separate semi-colon(';')
+locations: Wallace, Idaho; Lolo Pass, Mont.; Selway-Bitterroot, Idaho #separate by semi-colon(';')
+latitude: 47.487853 #to determine center of map
+longitude: -115.872459 #to determine center of map
 
 # repository variables (leave blank if self-contained)
 repo-url: https://digital.lib.uidaho.edu 
-repo-collection-id: lcheritage
-repo-link: on #options[on] - if on, will link to contentdm item url (outside of directory); if blank, will link to item url within directory, which will require the page-gen settings to be turned on below-- NOTE: these item pages will not work via Github Pages
+repo-collection-id: bigburn
+repo-link: on #options[on] - if on, will link to base repository item url outside of directory; if blank, will link to item url within directory, which will require the page-gen settings to be turned on below-- NOTE: these item pages will not work via Github Pages
 
 # Site Population settings
-csvtitle: lcheritage
+csvtitle: bigburn
 pagetypes: data,map,timeline,about #options for pagetypes- [data,map,timeline,about] -- home, browse, and subjects are auotmatic
-subjectsplit: subjects # options[subjects - whole subjects, including two word entries separted by semi-colon; words - breaks all subjects into individual words]
+subjectsplit: words # options[subjects - whole subjects, including two word entries separted by semi-colon; words - breaks all subjects into individual words]
 subjectcolor: # Leave blank if you just want the link color for bootstrap; options [orange,red,blue,green,purple,gray]
 mapzoomlevel: 10 # options - 
 datatable: title,creator,description,date,subjects,source # options any field on csv [title,creator,date,description,location,subjects,latitude,longitude,format,type,object-id]
-image-percentage-small: 30
-image-percentage-medium: 50
-image-percentage-large: 80
+image-percentage-small: 15
+image-percentage-medium: 30
+image-percentage-large: 50
+
+# url variables
+# url: https://www.lib.uidaho.edu/digital/
+# baseurl: /bigburn
+
+
+# url variables
+url: https://dcnb.github.io
+baseurl: /jekyll-collection-contentdm
+
+email: dbecker@uidaho.edu
+
 
 # bootstrap themes and options 
 navbar: dark # [dark (default),light, primary]
@@ -37,16 +49,8 @@ bstheme: Materia # leave blank or comment out for plain bootstrap
 # Note: to enable these, you'll need to rebuild/reserve the website or wait for GH-pages to do so. 
 
 
-# url variables
-# url: https://www.lib.uidaho.edu/digital/
-# baseurl: /lcheritage
 
 
-# url variables
-url: https://dcnb.github.io
-baseurl: /jekyll-collection-contentdm
-
-email: dbecker@uidaho.edu
 # Item Page Details
 
 # collection  display variables 
@@ -54,7 +58,7 @@ email: dbecker@uidaho.edu
 
 # page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
 page_gen:
-  - data: 'lcheritage' #should be the same as your csvtitle above
+  - data: 'bigburn' #should be the same as your csvtitle above
     template: 'items' 
     name: 'object-id' #name of the unique identifier in your metadata sheet
     dir: 'items' #which directory you'd like your pages generated to

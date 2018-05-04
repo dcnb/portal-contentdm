@@ -32,7 +32,7 @@ layout: default
                     <br/><hr/><br/>
                     <h4>More Like This</h4>
                     <div class="row">
-                    {% assign subjects = page.subjects | split:';'%}
+                    {% assign subjects = page.subject | split:';'%}
                          {% for subject in subjects %}{% if subject != " "%}
                          <a class="btn btn-outline-secondary m-2"  href="../browse/#{{ subject | strip }}">{{ subject }}</a>
                          {% endif %}  {% endfor %} 

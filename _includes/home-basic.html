@@ -19,7 +19,7 @@
        {% if site.pagetypes contains "subjects" %}
         <div class="col-md-4">
         <h2>Subjects</h2>
-        <p>{% assign subjects = site.subjects | split:',' %}
+        <p>{% assign subjects = site.keywords | split:',' %}
         {% for subject in subjects %}<a class="filter btn btn-sm btn-info" data-filter="{{ subject }}" href="browse/#{{ subject }}">{{ subject }}</a>  {% endfor %} </p>
         <p><a class="btn btn-secondary" href="{{ "/subjects/" | relative_url }}" role="button">View Subject Cloud &raquo;</a></p>
         </div>
