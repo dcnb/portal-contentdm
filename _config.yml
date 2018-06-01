@@ -16,7 +16,7 @@ longitude: -116.900083 #to determine center of map
 # repository variables (leave blank if self-contained)
 repo-url: https://digital.lib.uidaho.edu 
 repo-collection-ids: plcphotos!cities!whitepine!phs!spec_pot!
-repo-link: #options[on] - if on, will link to base repository item url outside of directory; if blank, will link to item url within directory, which will require the page-gen settings to be turned on below-- NOTE: these item pages will not work via Github Pages
+repo-link: on #options[on] - if on, will link to base repository item url outside of directory; if blank, will link to item url within directory, which will require the page-gen settings to be turned on below-- NOTE: these item pages will not work via Github Pages
 
 # Site Population settings
 csvtitle: potlatchportal
