@@ -33,7 +33,7 @@
         var item;
         for (i = 0; i < array.length; i++) {
             var size = mapSize(array[i].count)
-            item = '<span class="wrd ' + array[i].subject + ' tagcloud' + size + '"><a href="{{ "/browse/" | relative_url }}#' + array[i].subject + '">' + array[i].subject + '</a></span>';
+            item = '<span class="wrd btn btn-outline-secondary  ' + array[i].subject + ' tagcloud' + size + '"><a href="{{ "/browse/" | relative_url }}#' + array[i].subject + '">' + array[i].subject + '</a></span>';
             cloud.innerHTML += item;
         }
     }

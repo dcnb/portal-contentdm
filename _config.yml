@@ -4,6 +4,7 @@
 # JEKYLL_ENV=production jekyll build
 
 # Site/Collection settings
+<<<<<<< HEAD
 title: The Big Burn Collection
 tagline: An exhibition of materials related to the 'Big Burn' fires of 1910
 subjects:  #separate semi-colon(';')
@@ -20,6 +21,24 @@ repo-link: on #options[on] - if on, will link to base repository item url outsid
 
 # Site Population settings
 csvtitle: bigburn
+=======
+title: Barkhuff
+tagline: WSU will work
+subjects: Idaho; Northwest; Forests; Wilderness; Fire; Latah; Moscow;Potlatch #separate semi-colon(';')
+description: "The Latah County Common Heritage Collection was driven by funding from a National Endowment for the Humanities (NEH) Common Heritage Grant awarded to the University of Idaho Library in 2016. The materials in this collection were collected via community digitization days held in Moscow and Potlatch in 2016 and 2017." 
+mediatypes: documents; image #options[documents,images,video,sound,data] separate semi-colon(';')
+locations: University of Idaho (Library) #separate by semi-colon(';')
+latitude: 46.738036 #to determine center of map
+longitude: -116.67842 #to determine center of map
+
+# repository variables (leave blank if self-contained)
+repo-url: http://cdm16866.contentdm.oclc.org/
+repo-collection-id: barkhuff
+repo-link: on #options[on] - if on, will link to contentdm item url (outside of directory); if blank, will link to item url within directory, which will require the page-gen settings to be turned on below-- NOTE: these item pages will not work via Github Pages
+
+# Site Population settings
+csvtitle: metadata-wsu
+>>>>>>> origin/master
 pagetypes: data,map,timeline,about #options for pagetypes- [data,map,timeline,about] -- home, browse, and subjects are auotmatic
 subjectsplit: words # options[subjects - whole subjects, including two word entries separted by semi-colon; words - breaks all subjects into individual words]
 subjectcolor: # Leave blank if you just want the link color for bootstrap; options [orange,red,blue,green,purple,gray]
@@ -43,7 +62,7 @@ email: dbecker@uidaho.edu
 
 # bootstrap themes and options 
 navbar: dark # [dark (default),light, primary]
-bstheme: Materia # leave blank or comment out for plain bootstrap
+bstheme: # leave blank or comment out for plain bootstrap
 # For a bootswatch theme (https://bootswatch.com/) choose from any of the bootswatch themes listed below
 # [Cerulean,Cosmo,Cyborg,Darkly,Flatly,Journal,Litera,Lumen,Lux,Materia,Minty,Pulse,Sandstone,Simplex,Sketchy,Slate,Solar,Spacelab,Superhero,United,Yeti]
 # Note: to enable these, you'll need to rebuild/reserve the website or wait for GH-pages to do so. 
@@ -58,7 +77,11 @@ bstheme: Materia # leave blank or comment out for plain bootstrap
 
 # page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
 page_gen:
+<<<<<<< HEAD
   - data: 'bigburn' #should be the same as your csvtitle above
+=======
+  - data: 'metadata-wsu' #should be the same as your csvtitle above
+>>>>>>> origin/master
     template: 'items' 
     name: 'object-id' #name of the unique identifier in your metadata sheet
     dir: 'items' #which directory you'd like your pages generated to
