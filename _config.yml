@@ -6,7 +6,7 @@
 # Site/Collection settings
 title: potlatchportal
 tagline: An exhibition of materials related to potlatchportal
-subjects:  #separate semi-colon(';')
+subjects: #separate semi-colon(';')
 description: "potlatchportal" 
 mediatypes: images,documents #options[documents,images,video,sound,data] separate semi-colon(';')
 locations: Potlatch, Idaho;  #separate by semi-colon(';')
